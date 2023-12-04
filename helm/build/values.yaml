@@ -1,0 +1,15 @@
+app:
+  name: radission-wind-turbine-app
+  namespace: radission
+  cluster: .apps.wearedevs.rl97.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/WindTurbineInc/radission-wind-turbine
+  org: WindTurbineInc
+  name: radission-wind-turbine
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: radission/wind-turbine-app
+  tag: latest
